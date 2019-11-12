@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	font-family: 'Dosis', sans-serif;
+	outline: none;
+	transition: all .23s ease-in-out;
+}
+body{
+	background: #EEE;
+	color: #333;
+}
+form.log{
+	display: block;
+	margin: auto;
+	width: 90%;
+	max-width: 400px;
+	border-radius: 5px;
+	background: #FFF;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding: 20px 0px;
+}
+form.log p{
+	font-size: 15pt;
+	font-weight: bold;
+	margin-bottom: 10px; 
+	padding-left: 32px;
+}
+form.log input.field{
+	display: block;
+	margin: auto;
+	width: 80%;
+	padding-left: 10px;
+	height: 25px;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	background: #FFF;
+	margin-top: 10px;
+}
+form.log input.field:focus{
+	border-color: #001a00;
+	height: 30px;
+
+}
+form.log input.btn{
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	padding : 10px 7px;
+	border-radius: 5px;
+	border: none;
+	background: #DDD;
+	color: #666;
+	font-weight: bold;
+	cursor: pointer;
+}
+form.log input.btn:hover{
+	background: #2ECC40;
+	color: #FFF;
+}
+
+form.log a{
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: auto;
+	text-decoration: none;
+	color: #2ECC40;
+	margin-top: 20px;
+	font-size: 10pt;
+	cursor: pointer;
+}
+form.log a:houver{
+	color: #0000cc;
+}
+form#registrar.log{
+	display: none;
+}
+p#credits{
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #FFF;
+	font-size: 10pt;
+}
+img{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	width: 200px;
+}
+#loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	display: none;
+}
+#loading #opacity{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background: #000;
+	opacity: 0.8;
+	z-index: -1;
+}
+#loading p{
+	display: block;
+	margin: auto;
+	width: 90%;
+	height: 10vh;
+	margin-top: 45vh;
+	text-align: center;
+	vertical-align:middle;
+	color: #FFF; 
+}
+#topbar{
+	border-bottom: 1px solid #999;
+	padding: 10px 0px;
+	background: #FFF;
+	width: 100%;
+}
+#topbar button.menu{
+	float: right;
+	margin-right: 10px;
+	font-size: 12pt;
+	background: transparent;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+	color: #000;
+	cursor: pointer;
+}
+#topbar button.menu:hover{
+	background: #DDD;
+}
+#topbar form{
+	display: block;
+	margin: auto;
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+}
+#topbar form input{
+	display: inline-block;
+	width: 90%;
+	font-size: 12pt;
+	padding: 13px 0px;
+	background: url("imagens/pesquisar.png") no-repeat scroll 6px 7px;
+	padding-left: : 40px;
+	background: #DDD;
+	color: #333;
+	border: none;
+	border-radius: 3px;
+}
+#body{
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+	margin-top: 30px;
+}
+#body #utilizador{
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	max-width: 250px;
+	background-color: #FFF;
+	margin-right: 10%;
+}
+#body #utilizador img{
+	width: 100%;
+	height: auto;
+}
+#body #utilizador button{
+	width: 100%;
+	border-top: 2px solid #000;
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: right;
+	color: #000;
+	background-color: transparent;
+	padding: 10px 0px;
+	cursor: pointer;
+}
+#body #utilizador button:hover{
+	background-color :#000;
+	color: #FFF; 
+}
+#body #posts{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	max-width: 500px;
+}
+#body form{
+	display:block;
+	margin: auto;
+	padding: 10px;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+#body form textarea{
+	display: block;
+	margin: auto;
+	width: 90%;
+	height: 100px;
+	padding: 10px;
+	border-radius: 3px;
+	resize: none;
+	font-size: 12pt;
+	margin-bottom: 25px;
+}
+#body form a{
+	text-decoration: none;
+	color: #001a00;
+	padding: 7px 10px;
+	cursor: pointer;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 10pt; 
+	margin-left: 10px;
+}
+#body form a:hover{
+	color: #333;
+	background-color:  #DDD;
+}
+#body form input#submit{
+	float: right;
+	margin-right: 10px;
+	margin-top: -15px;
+	border: none;
+	border-radius: 3px;
+	background-color: #000;
+	color: #FFF;
+	padding: 10px;
+	cursor: pointer;
+}
+#body form input#submit:hover{
+	color: #333;
+	background-color:  #DDD;
+}
+#post{
+	width: 100%;
+	background-color: #FFF;
+	border-radius: 3px;
+	margin-top: 10px;
+	padding: 10px 0px;
+	text-align: left;
+}
+#post img#user{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -1px;
+	margin-left: 15px;
+	width: 40px;
+	border-radius: 100%;
+}
+#post p#user{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+#post span{
+	display: block;
+	font-size: 8pt;
+	color: #CCC;
+	margin-top: 5px;
+	margin-left: 23px;
+}
+#post p#texto{
+	display: block;
+	margin: auto;
+	width: 90%;
+	font-size: 14pt;
+	margin-top: 20px;
+}
+#post img#gosto{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 16px;
+}
